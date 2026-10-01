@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b120e">
+<meta name="description" content="Слияние — отдых среди леса, гор и рек в Восточном Казахстане.">
+<title>Слияние — отдых, который остаётся</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap');
+:root{--bg:#0a0f0c;--panel:#111813;--panel2:#162019;--line:rgba(255,255,255,.1);--text:#f4f2e9;--muted:#a8afa8;--accent:#d7b66b;--accent2:#7d9b70;--green:#9bb58d;--danger:#9d6b61;--shadow:0 25px 80px rgba(0,0,0,.38)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}::selection{background:var(--accent);color:#111}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:20;background:radial-gradient(circle at 20% 10%,rgba(125,155,112,.06),transparent 30%),radial-gradient(circle at 80% 70%,rgba(215,182,107,.04),transparent 28%)}
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:1000}.nav{position:fixed;z-index:900;top:18px;left:50%;transform:translateX(-50%);width:min(1180px,calc(100% - 32px));display:flex;align-items:center;justify-content:space-between;padding:12px 14px 12px 20px;border:1px solid rgba(255,255,255,.12);background:rgba(9,14,11,.64);backdrop-filter:blur(18px);border-radius:999px;transition:.35s}.nav.scrolled{background:rgba(9,14,11,.9);box-shadow:0 15px 45px rgba(0,0,0,.25)}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.12em}.brand-mark{width:34px;height:34px;border-radius:50%;border:1px solid rgba(215,182,107,.6);display:grid;place-items:center;color:var(--accent);font-family:serif}.links{display:flex;gap:24px;font-size:13px;color:#c7cdc6}.links a{transition:.2s}.links a:hover{color:#fff}.nav-cta{padding:10px 17px;border-radius:999px;background:var(--text);color:#111;font-weight:800;font-size:13px}.burger{display:none;background:none;border:0;color:#fff;font-size:24px;padding:0}.mobile-menu{display:none;position:fixed;inset:0;top:70px;left:0;right:0;background:rgba(9,14,11,.98);backdrop-filter:blur(18px);z-index:800;flex-direction:column;padding:20px;gap:15px}.mobile-menu.open{display:flex}.mobile-menu a{padding:15px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);text-align:center;transition:.2s;font-weight:600}.mobile-menu a:hover,.mobile-menu a:active{background:#fff;color:#111}.hero{min-height:100svh;position:relative;display:grid;place-items:end center;overflow:hidden;background:linear-gradient(135deg,#1a2a1a 0%,#0a0f0c 50%,#0f1410 100%);background-attachment:fixed}.hero-photo{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,10,7,.25),rgba(6,10,7,.56) 60%,#0a0f0c 100%),linear-gradient(135deg,#2d5a3d 0%,#1a3a22 100%);animation:heroZoom 16s ease-out forwards}@keyframes heroZoom{to{transform:scale(1)}}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,8,6,.75),transparent 65%)}.hero-inner{position:relative;z-index:2;width:min(1180px,calc(100% - 32px));padding:0 0 92px}.eyebrow{display:inline-flex;gap:9px;align-items:center;text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:#d4dacd;margin-bottom:18px}.eyebrow:before{content:"";width:36px;height:1px;background:var(--accent)}h1{font-family:'Playfair Display',serif;font-size:clamp(48px,10vw,120px);line-height:.82;font-weight:600;letter-spacing:-.055em;margin:0;max-width:900px}h2{font-family:'Playfair Display',serif;font-size:clamp(42px,6vw,78px);line-height:.95;margin:0;letter-spacing:-.035em;font-weight:600}.hero-sub{font-size:clamp(16px,2vw,21px);line-height:1.5;color:#d0d5cf;max-width:600px;margin:28px 0}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn{border:1px solid rgba(255,255,255,.16);padding:15px 22px;border-radius:999px;background:rgba(255,255,255,.07);color:#fff;font-weight:800;transition:.3s;position:relative;overflow:hidden}.btn.primary{background:var(--accent);color:#141510;border-color:var(--accent)}.btn:hover,.btn:active{transform:translateY(-3px);box-shadow:0 15px 35px rgba(0,0,0,.3)}.hero-note{position:absolute;right:0;bottom:96px;display:flex;gap:10px;align-items:center;color:#d7ddd5;font-size:12px}.scroll-line{width:48px;height:1px;background:rgba(255,255,255,.5)}
+main{position:relative}.section{width:min(1180px,calc(100% - 32px));margin:auto;padding:80px 16px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:48px}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:.2em;color:var(--accent);margin-bottom:13px}.lead{max-width:430px;color:var(--muted);line-height:1.75;font-size:15px}.manifesto{display:grid;grid-template-columns:1.3fr .7fr;gap:80px;border-top:1px solid var(--line);padding-top:36px}.manifesto p{font-family:'Playfair Display',serif;font-size:clamp(28px,4.2vw,52px);line-height:1.06;margin:0}.facts{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);align-self:start}.fact{background:var(--bg);padding:24px}.fact strong{display:block;font-size:28px;margin-bottom:6px}.fact span{color:var(--muted);font-size:12px}
+.houses{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.house{grid-column:span 6;min-height:400px;position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--line);background:linear-gradient(135deg,#151b16,#0d1110);box-shadow:var(--shadow);cursor:pointer;transition:.4s}.house:nth-child(3),.house:nth-child(4){grid-column:span 4;min-height:340px}.house:nth-child(5){grid-column:span 4;min-height:340px}.house-img{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .8s;background:linear-gradient(135deg,#2a4a3a 0%,#1a3a2a 100%)}.house:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 28%,rgba(5,8,6,.15) 45%,rgba(5,8,6,.94) 100%)}.house:hover .house-img{transform:scale(1.06)}.house:hover{border-color:rgba(215,182,107,.4);box-shadow:0 25px 60px rgba(0,0,0,.4)}.house-body{position:absolute;z-index:2;left:20px;right:20px;bottom:20px}.house-tag{display:inline-flex;padding:7px 10px;border-radius:999px;background:rgba(10,15,12,.7);border:1px solid rgba(255,255,255,.12);font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:#d6ddd4;margin-bottom:13px}.house h3{font-family:'Playfair Display',serif;font-size:28px;margin:0 0 8px}.house p{color:#c0c7c0;margin:0 0 18px;font-size:13px}.house-row{display:flex;justify-content:space-between;align-items:center;gap:10px}.mini-btn{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);color:#fff;padding:10px 14px;border-radius:999px;font-weight:700;font-size:12px;transition:.2s}.mini-btn:hover,.mini-btn:active{background:#fff;color:#111}
+.capacity{color:#d8ddd7;font-size:12px}.experiences{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.experience{min-height:280px;border-radius:18px;overflow:hidden;position:relative;border:1px solid var(--line);background:linear-gradient(135deg,#1a3a2a,#0d1510);cursor:pointer;transition:.4s}.experience-img{position:absolute;inset:0;background-size:cover;background-position:center;transition:.7s;background:linear-gradient(135deg,#3a5a4a,#1a3a2a)}.experience:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(4,8,5,.88))}.experience:hover .experience-img{transform:scale(1.06)}.experience:hover{border-color:rgba(215,182,107,.4);box-shadow:0 20px 50px rgba(0,0,0,.3)}.experience-content{position:absolute;z-index:2;bottom:20px;left:20px;right:20px}.experience h3{font-size:18px;margin:0 0 5px}.experience p{margin:0;color:#b8c0b8;font-size:12px;line-height:1.5}
+.booking{background:linear-gradient(145deg,#131d16,#0d130f);border:1px solid var(--line);border-radius:28px;padding:40px;box-shadow:var(--shadow)}.booking-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px}.booking-copy h2{margin-bottom:18px}.booking-copy p{color:var(--muted);line-height:1.7}.booking-steps{display:grid;gap:13px;margin-top:30px}.step{display:flex;gap:12px;align-items:center;color:#c8cec7;font-size:13px}.step b{width:30px;height:30px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--accent);font-size:11px}.booking-form{background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:20px;padding:25px}.field{display:grid;gap:8px;margin-bottom:15px}.field label{font-size:11px;color:#9fa79f;text-transform:uppercase;letter-spacing:.12em}.field input,.field select,.field textarea{width:100%;border:1px solid rgba(255,255,255,.12);background:#0b110d;color:#fff;border-radius:12px;padding:12px 14px;outline:none;font-size:14px}.field input:focus,.field select:focus,.field textarea:focus{border-color:rgba(215,182,107,.65);background:#101510}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.date-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.availability{display:none;padding:12px 14px;border-radius:12px;font-size:12px;margin-bottom:15px}.availability.ok{display:block;background:rgba(125,155,112,.12);border:1px solid rgba(125,155,112,.35);color:#bdd1b4}.availability.busy{display:block;background:rgba(157,107,97,.12);border:1px solid rgba(157,107,97,.35);color:#d5aaa2}.form-note{font-size:10px;color:#727a72;line-height:1.5;margin-top:10px}
+.gallery{display:grid;grid-template-columns:1.4fr .8fr .8fr;grid-auto-rows:200px;gap:12px}.gallery-item{border-radius:16px;overflow:hidden;border:1px solid var(--line);background-size:cover;background-position:center;position:relative;background:linear-gradient(135deg,#2a4a3a,#1a3a2a);transition:.4s;cursor:pointer}.gallery-item:first-child{grid-row:span 2}.gallery-item:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.3));opacity:.5}.gallery-item:hover{border-color:rgba(215,182,107,.3)}.gallery-note{color:var(--muted);font-size:11px;margin-top:14px}
+.contact{padding:100px 0 80px;text-align:center;position:relative}.contact h2{font-family:'Playfair Display',serif;font-size:clamp(48px,9vw,100px);line-height:.9;margin:0 auto 25px;max-width:1000px}.contact p{color:var(--muted);max-width:500px;margin:0 auto 30px;line-height:1.7}.footer{border-top:1px solid var(--line);padding:26px 0;color:#7d847e;font-size:11px}.footer-inner{width:min(1180px,calc(100% - 32px));margin:auto;display:flex;justify-content:space-between;gap:20px}
+.modal{position:fixed;inset:0;background:rgba(3,6,4,.88);backdrop-filter:blur(18px);z-index:1200;display:none;align-items:center;justify-content:center;padding:18px;overflow-y:auto}.modal.open{display:flex}.modal-card{width:min(800px,100%);max-height:90vh;overflow-y:auto;background:#111812;border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:0 40px 120px #000}.modal-head{display:flex;justify-content:space-between;align-items:start;gap:20px;margin-bottom:20px}.close{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:#182019;color:#fff;font-size:20px;flex-shrink:0}.modal-gallery{display:grid;grid-template-columns:2fr 1fr;gap:8px;margin:20px 0}.modal-gallery-item{border-radius:12px;background:linear-gradient(135deg,#2a4a3a,#1a3a2a);height:200px;border:1px solid var(--line)}.modal-gallery-item:first-child{grid-column:span 1;grid-row:span 2;height:auto}.modal h3{font-family:'Playfair Display',serif;font-size:36px;margin:0 0 5px}.muted{color:var(--muted)}
+.reveal{opacity:0;transform:translateY(20px);filter:blur(3px);transition:opacity .6s,transform .6s,filter .6s}.reveal.visible{opacity:1;transform:none;filter:none}.delay1{transition-delay:.1s}.delay2{transition-delay:.2s}.delay3{transition-delay:.3s}
+.admin-link{position:fixed;bottom:16px;left:16px;z-index:700;color:rgba(255,255,255,.12);font-size:10px;transition:.2s}.admin-link:hover{color:#fff}
+@media(max-width:1024px){.booking-grid{gap:30px}.section{padding:70px 16px}}
+@media(max-width:800px){
+.links,.nav-cta{display:none}
+.burger{display:block;width:40px;height:40px;display:flex;align-items:center;justify-content:center}
+.nav{padding:9px 14px 9px 17px;width:calc(100% - 16px)}
+.hero-note{display:none}
+.section{padding:60px 16px}
+.section-head,.manifesto,.booking-grid{grid-template-columns:1fr;display:grid}
+.facts{margin-top:10px}
+.houses{display:grid;grid-template-columns:1fr}
+.house,.house:nth-child(3),.house:nth-child(4),.house:nth-child(5){grid-column:auto;min-height:340px}
+.experiences{grid-template-columns:1fr 1fr;gap:12px}
+.experience{min-height:220px}
+.booking{padding:25px}
+.booking-copy{margin-bottom:20px}
+.gallery{grid-template-columns:1fr;grid-auto-rows:250px}
+.gallery-item:first-child{grid-row:auto}
+.modal-card{padding:20px}
+.modal-gallery{grid-template-columns:1fr}
+.modal-gallery-item:first-child{grid-column:auto;grid-row:auto}
+.modal h3{font-size:28px}
+}
+@media(max-width:480px){
+h1{font-size:56px}
+.hero-sub{font-size:14px}
+.experiences{grid-template-columns:1fr}
+.gallery{grid-template-columns:1fr}
+.house h3{font-size:24px}
+.booking{border-radius:20px;padding:20px}
+.section{padding:50px 16px}
+.modal-card{padding:16px;margin:16px}
+.experience{min-height:180px}
+}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header class="nav" id="nav">
+<a class="brand" href="#top"><span class="brand-mark">С</span><span>СЛИЯНИЕ</span></a>
+<nav class="links">
+<a href="#place">О месте</a>
+<a href="#houses">Домики</a>
+<a href="#experiences">Отдых</a>
+<a href="#booking">Бронирование</a>
+</nav>
+<a class="nav-cta" href="#booking">Забронировать</a>
+<button class="burger" onclick="toggleMenu()">☰</button>
+</header>
+
+<nav class="mobile-menu" id="mobile-menu">
+<a href="#place" onclick="toggleMenu()">О месте</a>
+<a href="#houses" onclick="toggleMenu()">Домики</a>
+<a href="#experiences" onclick="toggleMenu()">Отдых</a>
+<a href="#booking" onclick="toggleMenu()">Бронирование</a>
+</nav>
+
+<section class="hero" id="top">
+<div class="hero-photo"></div>
+<div class="hero-inner reveal visible">
+<div class="eyebrow">Восточный Казахстан · среди леса и рек</div>
+<h1>Слияние</h1>
+<p class="hero-sub">Место, где две реки становятся одной — а отдых наконец становится отдыхом.</p>
+<div class="hero-actions">
+<a class="btn primary" href="#booking">Выбрать домик</a>
+<a class="btn" href="#houses">Посмотреть домики</a>
+</div>
+<div class="hero-note"><span class="scroll-line"></span>листайте вниз</div>
+</div>
+</section>
+
+<main>
+<section class="section" id="place">
+<div class="section-head reveal">
+<div>
+<div class="kicker">01 · Место</div>
+<h2>Тишина,<br>которую слышно.</h2>
+</div>
+<p class="lead">«Слияние» — загородный отдых среди природы Восточного Казахстана. Здесь можно приехать на несколько дней и действительно выключиться из городского ритма.</p>
+</div>
+<div class="manifesto reveal">
+<p>Лес. Вода. Горы. Тёплый свет вечером. Всё остальное может подождать.</p>
+<div class="facts">
+<div class="fact"><strong>4</strong><span>сезона для отдыха</span></div>
+<div class="fact"><strong>5</strong><span>вариантов размещения</span></div>
+<div class="fact"><strong>6–13</strong><span>гостей в домах</span></div>
+<div class="fact"><strong>∞</strong><span>поводов остаться</span></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="houses">
+<div class="section-head reveal">
+<div>
+<div class="kicker">02 · Проживание</div>
+<h2>Выберите<br>свой дом.</h2>
+</div>
+<p class="lead">Каждый домик — отдельное настроение. Выбирайте и отправляйте заявку на нужные даты.</p>
+</div>
+<div class="houses">
+<article class="house reveal" onclick="openHouse('Дом Луговой',2)"><div class="house-img"></div><div class="house-body"><span class="house-tag">Дом · 01</span><h3>Дом Луговой</h3><p>Небольшой уютный дом для двоих.</p><div class="house-row"><span class="capacity">до 2 гостей</span><button class="mini-btn" onclick="event.stopPropagation()">Подробнее →</button></div></div></article>
+
+<article class="house reveal delay1" onclick="openHouse('Дом Речной',6)"><div class="house-img"></div><div class="house-body"><span class="house-tag">Дом · 02</span><h3>Дом Речной</h3><p>Один из домов категории до шести гостей.</p><div class="house-row"><span class="capacity">до 6 гостей</span><button class="mini-btn" onclick="event.stopPropagation()">Подробнее →</button></div></div></article>
+
+<article class="house reveal delay2" onclick="openHouse('Дом Береговой',6)"><div class="house-img"></div><div class="house-body"><span class="house-tag">Дом · 03</span><h3>Дом Береговой</h3><p>Отдельный вариант размещения до шести гостей.</p><div class="house-row"><span class="capacity">до 6 гостей</span><button class="mini-btn" onclick="event.stopPropagation()">Подробнее →</button></div></div></article>
+
+<article class="house reveal delay1" onclick="openHouse('Дом Горный',6)"><div class="house-img"></div><div class="house-body"><span class="house-tag">Дом · 04</span><h3>Дом Горный</h3><p>Дом для компании до шести гостей.</p><div class="house-row"><span class="capacity">до 6 гостей</span><button class="mini-btn" onclick="event.stopPropagation()">Подробнее →</button></div></div></article>
+
+<article class="house reveal delay2" onclick="openHouse('Дом Солнечный',13)"><div class="house-img"></div><div class="house-body"><span class="house-tag">Дом · 05</span><h3>Дом Солнечный</h3><p>Просторный дом для большой компании.</p><div class="house-row"><span class="capacity">до 13 гостей</span><button class="mini-btn" onclick="event.stopPropagation()">Подробнее →</button></div></div></article>
+</div>
+<p class="gallery-note reveal">Фотографии временные. Для запуска заменим на оригиналы от владельцев.</p>
+</section>
+
+<section class="section" id="experiences">
+<div class="section-head reveal">
+<div>
+<div class="kicker">03 · Отдых</div>
+<h2>Не только<br>домик.</h2>
+</div>
+<p class="lead">Активности, вода, баня и зимняя доставка — всё в одну спокойную коллекцию.</p>
+</div>
+<div class="experiences">
+<article class="experience reveal"><div class="experience-img"></div><div class="experience-content"><h3>Аэролодка</h3><p>В летний сезон по высокой воде.</p></div></article>
+<article class="experience reveal delay1"><div class="experience-img"></div><div class="experience-content"><h3>Бассейн</h3><p>Летний сезон на территории базы.</p></div></article>
+<article class="experience reveal delay2"><div class="experience-img"></div><div class="experience-content"><h3>Фурако</h3><p>Горячая кедровая купель под открытым небом.</p></div></article>
+<article class="experience reveal delay3"><div class="experience-img"></div><div class="experience-content"><h3>Баня «Телогрейка»</h3><p>Вместимость 8–10 человек.</p></div></article>
+<article class="experience reveal"><div class="experience-img"></div><div class="experience-content"><h3>Тёплая беседка</h3><p>Пространство до 30 человек.</p></div></article>
+<article class="experience reveal delay1"><div class="experience-img"></div><div class="experience-content"><h3>Доставка на джипах</h3><p>В летний сезон и межсезонье.</p></div></article>
+<article class="experience reveal delay2"><div class="experience-img"></div><div class="experience-content"><h3>Снегоходная доставка</h3><p>Зимой до базы на снегоходах.</p></div></article>
+<article class="experience reveal delay3"><div class="experience-img"></div><div class="experience-content"><h3>Пикник на природе</h3><p>Организация и помощь с поездками.</p></div></article>
+</div>
+</section>
+
+<section class="section" id="booking">
+<div class="booking reveal">
+<div class="booking-grid">
+<div class="booking-copy">
+<div class="kicker">04 · Бронирование</div>
+<h2>Ваш отдых<br>начинается здесь.</h2>
+<p>Выберите домик, даты и количество гостей. После отправки заявки менеджер подтвердит доступность и стоимость.</p>
+<div class="booking-steps">
+<div class="step"><b>01</b><span>Выберите домик</span></div>
+<div class="step"><b>02</b><span>Проверьте даты</span></div>
+<div class="step"><b>03</b><span>Оставьте контакты</span></div>
+<div class="step"><b>04</b><span>Подтверждение в WhatsApp</span></div>
+</div>
+</div>
+<form class="booking-form" id="bookingForm">
+<div class="field">
+<label>Домик</label>
+<select id="houseSelect" required>
+<option value="">Выберите домик</option>
+<option>Дом Луговой</option>
+<option>Дом Речной</option>
+<option>Дом Береговой</option>
+<option>Дом Горный</option>
+<option>Дом Солнечный</option>
+</select>
+</div>
+<div class="date-grid">
+<div class="field">
+<label>Заезд</label>
+<input id="checkin" type="date" required>
+</div>
+<div class="field">
+<label>Выезд</label>
+<input id="checkout" type="date" required>
+</div>
+</div>
+<div id="availability" class="availability"></div>
+<div class="row">
+<div class="field">
+<label>Гостей</label>
+<select id="guests" required>
+<option value="">Количество</option>
+<option>1</option><option>2</option><option>3</option><option>4</option>
+<option>5</option><option>6</option><option>7–10</option><option>11–13</option>
+</select>
+</div>
+<div class="field">
+<label>Телефон / WhatsApp</label>
+<input id="phone" type="tel" placeholder="+7 ___ ___ __ __" required>
+</div>
+</div>
+<div class="field">
+<label>Ваше имя</label>
+<input id="name" type="text" placeholder="Как к вам обращаться?" required>
+</div>
+<div class="field">
+<label>Дополнительно</label>
+<textarea id="comment" rows="2" placeholder="Баня, фурако, доставка, вопрос..."></textarea>
+</div>
+<button class="btn primary" style="width:100%;margin-top:10px" type="submit">Отправить заявку в WhatsApp →</button>
+<div class="form-note">Демо-версия: готово к подключению БД и админ-панели.</div>
+</form>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-head reveal">
+<div>
+<div class="kicker">05 · Атмосфера</div>
+<h2>Оставьте город<br>за поворотом.</h2>
+</div>
+<p class="lead">В финальной версии — фотогалерея из оригинальных материалов базы.</p>
+</div>
+<div class="gallery reveal">
+<div class="gallery-item"></div>
+<div class="gallery-item"></div>
+<div class="gallery-item"></div>
+<div class="gallery-item"></div>
+<div class="gallery-item"></div>
+</div>
+</section>
+
+<section class="contact">
+<div class="kicker">06 · Слияние</div>
+<h2 class="reveal">Приезжайте<br>за тишиной.</h2>
+<p class="reveal">Выберите домик и даты — дальше всё решит природа.</p>
+<a class="btn primary reveal" href="#booking">Забронировать отдых</a>
+</section>
+</main>
+
+<footer class="footer">
+<div class="footer-inner">
+<span>© Слияние · Восточный Казахстан</span>
+<span>Сайт для базы отдыха · 2026</span>
+</div>
+</footer>
+
+<div class="modal" id="modal">
+<div class="modal-card">
+<div class="modal-head">
+<div>
+<div class="kicker">Ваш выбор</div>
+<h3 id="modalTitle">Домик</h3>
+<div class="muted" id="modalMeta"></div>
+</div>
+<button class="close" onclick="closeModal()">×</button>
+</div>
+<div class="modal-gallery" id="modalGallery">
+<div class="modal-gallery-item"></div>
+<div class="modal-gallery-item"></div>
+</div>
+<p class="muted" id="modalText">Фотографии и характеристики будут дополнены после получения оригинальных материалов от базы.</p>
+<button class="btn primary" onclick="closeModal();document.getElementById('houseSelect').value=document.getElementById('modalTitle').textContent;document.getElementById('booking').scrollIntoView({behavior:'smooth'})" style="width:100%;margin-top:20px">Выбрать этот дом →</button>
+</div>
+</div>
+
+<script>
+const busy={'Дом Луговой':[],'Дом Речной':[],'Дом Береговой':[],'Дом Горный':[],'Дом Солнечный':[]};
+const $=s=>document.querySelector(s);
+const today=new Date();
+const iso=d=>d.toISOString().slice(0,10);
+
+// Инит
+$('#checkin').min=iso(today);
+$('#checkout').min=iso(today);
+
+// Меню
+function toggleMenu(){$('#mobile-menu').classList.toggle('open')}
+document.addEventListener('click',e=>{if(!e.target.closest('.burger')&&!e.target.closest('#mobile-menu')){$('#mobile-menu').classList.remove('open')}})
+
+// Бронирование
+$('#checkin').addEventListener('change',()=>{$('#checkout').min=$('#checkin').value;checkAvailability()});
+$('#checkout').addEventListener('change',checkAvailability);
+$('#houseSelect').addEventListener('change',checkAvailability);
+
+function rangeBusy(h,a,b){return (busy[h]||[]).some(r=>a<r.out&&b>r.in)}
+function checkAvailability(){
+  const h=$('#houseSelect').value,a=$('#checkin').value,b=$('#checkout').value,box=$('#availability');
+  if(!h||!a||!b){box.className='availability';box.textContent='';return}
+  if(b<=a){box.className='availability busy';box.textContent='Дата выезда должна быть позже даты заезда.';return}
+  if(rangeBusy(h,a,b)){
+    box.className='availability busy';
+    box.textContent='Эти даты заняты. Выберите другой период или домик.';
+  }else{
+    box.className='availability ok';
+    box.textContent='✓ Даты свободны — можно отправить заявку.';
+  }
+}
+
+$('#bookingForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  checkAvailability();
+  if($('#availability').classList.contains('busy'))return;
+  const msg=`Здравствуйте! Хочу забронировать отдых на базе «Слияние».%0A%0AДомик: ${encodeURIComponent($('#houseSelect').value)}%0AЗаезд: ${encodeURIComponent($('#checkin').value)}%0AВыезд: ${encodeURIComponent($('#checkout').value)}%0AГостей: ${encodeURIComponent($('#guests').value)}%0AИмя: ${encodeURIComponent($('#name').value)}%0AТелефон: ${encodeURIComponent($('#phone').value)}%0AКомментарий: ${encodeURIComponent($('#comment').value||'—')}`;
+  window.open('https://wa.me/77054173602?text='+msg,'_blank');
+});
+
+function openHouse(name,cap){
+  $('#modalTitle').textContent=name;
+  $('#modalMeta').textContent=`до ${cap} гостей`;
+  $('#modal').classList.add('open');
+}
+function closeModal(){$('#modal').classList.remove('open')}
+$('#modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
+
+// Анимации
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// Прогресс и навбар
+addEventListener('scroll',()=>{
+  const h=document.documentElement.scrollHeight-innerHeight;
+  $('#progress').style.width=(scrollY/h*100)+'%';
+  $('#nav').classList.toggle('scrolled',scrollY>30);
+});
+</script>
+</body>
+</html>
